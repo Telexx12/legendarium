@@ -1,0 +1,246 @@
+body{
+    overflow: hidden;
+}
+.background-image{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+}
+
+img{
+    z-index: 1;
+    position: absolute;
+}
+
+
+
+#mszentgy_0001_karmelita-kolost{
+    width: 20%;
+    top: 35.1rem;
+    left: 80.4rem;
+}
+
+#mszentgy_0009_csejd{
+    width: 13%;
+    top: 43.1rem;
+    left: 106.8rem;
+    overflow: hidden;
+}
+#mszentgy_0000_unit-templ{
+    width: 9.1%;
+    top: 43rem;
+    left: 69.8rem;
+}
+#mszentgy_0004_romkat-templ{
+    width: 12%;
+    top: 42.5rem;
+    left: 44rem;
+}
+#mszentgy_0003_mariaffi{
+    width: 8%;
+    top: 56.5rem;
+    left: 17.5rem;
+}
+#mszentgy_0006_ref-templom{
+    width: 11%;
+    top: 32.2rem;
+    left: 36rem;
+}
+#mszentgy_0010_mariaffi-kast{
+    width: 12%;
+    top: 29.2rem;
+    left: 15rem;
+}
+#mszentgy_0007_tolgyfa{
+    width: 3.5%;
+    top: 28rem;
+    left: 32rem;
+}
+#mszentgy_0005_ort-templom-002{
+    width: 9%;
+    top: 20rem;
+    left: 47rem;
+}
+#mszentgy_0011_starnd{
+    width: 9%;
+    left: 36rem;
+    top: 20rem;
+}
+#mszentgy_0012_csiri-malom{
+    width: 8.5%;
+    top: 22rem;
+    left: 72rem;
+}
+#mszentgy_0008_apor-siremlek{
+    width: 6%;
+    left: 101rem;
+    top: 20.8rem;
+}
+#mszentgy_0002_appor-pince{
+    width: 7%;
+    top: 30rem;
+    left: 104rem;
+}
+#mszentgy_0013_harangtorony{
+    width: 5%;
+    top: 18.5rem;
+    left: 109rem;
+}
+#oortodox_templom{
+    width: 8.5%;
+    left: 50.7rem;
+    top: 32.8rem;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@font-face {
+    font-family: Yummo;
+    src: url("../fonts/Yummo_Bold.otf") format("opentype");
+}
+
+
+.popup-body{
+    position: absolute;
+    transform: translate3d(0px, 0px, 0px);
+    /*top: 0px;*/
+    /*left: 0px;*/
+    will-change: transform;
+    max-width: 60rem;
+    /*overflow: scroll;*/
+    /*!*max-height: 50rem;*!*/
+    /*!*overflow-y: scroll;*!*/
+    /*!*overflow-x: hidden;*!*/
+    font-family: Yummo;
+    font-size: 1.1rem;
+    color: #4d4d4e;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    white-space: normal;
+    line-break: auto;
+    word-wrap: break-word;
+    z-index: 100;
+}
+.popover-header {
+    box-shadow: inset 0 15px 8px -10px rgba(0,0,0,.2), inset 0 -15px 8px -10px rgba(0,0,0,.2);
+    background: #fbc160;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    margin: 0;
+    font-size: 1rem;
+    color: inherit;
+    border-bottom: 1px solid #ebebeb;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+}
+.popover-body{
+    padding: 0.5rem 0.75rem;
+    border-bottom: 0.3rem;
+    background-color: white;
+    position: relative;
+    max-height: 60rem;
+    overflow-y: scroll;
+}
+
+.popover-body span{
+    white-space-collapse: preserve;
+}
+
+.arrow{
+    width: 0.5rem;
+    height: 1rem;
+    margin: 0.3rem 0;
+    position: absolute;
+    display: block;
+}
+.arrow::after {
+    right: 1px;
+    border-width: 0.5rem 0 0.5rem 0.5rem;
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    content: "";
+    border-color: transparent;
+    border-left-color: white;
+    border-style: solid;
+}
+.title {
+    z-index: 10;
+    margin-right: 3rem;
+    margin-left: 1rem;
+    font-family: Yummo;
+    font-size: 1.3rem;
+    color: #000;
+}
+.closepop {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.37rem;
+    width: 2rem;
+}
+h3{
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.flags img{
+    width: 5rem;
+    position: relative;
+
+}
+.flags{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: absolute;
+    bottom: 2rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+#hidden-reload{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    z-index: 1001;
+    left: 49rem;
+}
+#loading-screen{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1002;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*.popup{*/
+/*    display: none;*/
+/*}*/
